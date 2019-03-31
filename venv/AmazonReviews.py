@@ -23,8 +23,8 @@ class AmazonReview:
         try:
            # url = 'https://www.amazon.in/OnePlus-Mirror-Black-128GB-Storage/dp/B07DJD1Y3Q/ref=sr_1_1?crid=C1MIII97CLX2&keywords=one+plus6t+mobiles&qid=1553094939&s=gateway&sprefix=one+plus%2Caps%2C1115&sr=8-1'
             html = urllib.request.urlopen(url, context=ctx).read()
-            htmlfile = open('output_file.html','r+')
-            html = htmlfile.read()
+            #htmlfile = open('output_file.html','r+')
+           # html = htmlfile.read()
             soup = BeautifulSoup(html, 'html.parser')
         except:
             html = m.searchContent('www.Amazon.com','OnePlus 6T (Mirror Black, 6GB RAM, 128GB Storage)')
